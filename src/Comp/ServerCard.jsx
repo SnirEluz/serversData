@@ -37,7 +37,8 @@ export default function ServerCard({ s, setUpdate }) {
                 {s.hostingId == 3 ? "GoDaddy": null}
                 {s.hostingId == 4 ? "DigitalO": null}
             </td>
-            <td><label className="switch">
+            <td>
+                <label className="switch">
                 <input type="checkbox"
                     checked={s.status == "Online"}
                     onChange={() => {
@@ -49,7 +50,8 @@ export default function ServerCard({ s, setUpdate }) {
                     }}
                 />
                 <span className="slider"></span>
-            </label></td>
+            </label>
+            </td>
         </tr>
     )
 }
